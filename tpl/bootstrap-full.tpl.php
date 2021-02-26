@@ -71,7 +71,7 @@ $this->renderIn(__DIR__ . "/base.tpl.php");
                     ], (array)$b);
             });
 
-            $nav->out("ul @navbar-nav mr-auto");
+            $nav->out("ul @navbar-nav @mr-auto");
 
 
             ?>

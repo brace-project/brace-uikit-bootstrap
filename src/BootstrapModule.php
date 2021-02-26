@@ -30,6 +30,7 @@ class BootstrapModule implements BraceModule
             ->addFile(__DIR__ . "/../lib-dist/bootstrap-icons-1.3.0/bootstrap-icons.css");
 
         $app->assets->virtual($this->assetRoot . "js/ui-bundle.js", "text/javascript")
+            ->addFile(__DIR__ . "/../lib-dist/jquery.js")
             ->addFile(__DIR__ . "/../lib-dist/bootstrap-5.0.0-beta2-dist/js/bootstrap.min.js");
 
         $app->assets->virtual($this->assetRoot . "js/plugins.js", "text/javascript");
