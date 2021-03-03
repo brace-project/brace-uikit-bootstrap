@@ -13,7 +13,7 @@ class BootstrapUiPage extends Page
         return new self(__DIR__ . "/../tpl/base.tpl.php", $containerElementDef);
     }
 
-    public static function createCoreUiPage(string $containerElementDef="div @container-fluid @fade-in") : self
+    public static function createPageWithNavbar(string $containerElementDef="div @container-fluid @fade-in") : self
     {
         return new self(__DIR__ . "/../tpl/bootstrap-full.tpl.php", $containerElementDef);
     }
